@@ -16,11 +16,9 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned char		*destiny;
 	const unsigned char	*source;
-	size_t				i;
 
 	destiny = dest;
 	source = src;
-	i = 0;
 	if (src > dest)
 		ft_memcpy(dest, src, n);
 	else
@@ -31,16 +29,16 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	return (dest);
 }
 
-#include "stdio.h"
-#include "string.h"
+// #include "stdio.h"
+// #include "string.h"
 
-int	main(void)
-{
-	char	a[] = "123456789";
-	char	b[] = "123456789";
+// int	main(void)
+// {
+// 	char	a[] = "123456789";
+// 	char	b[] = "123456789";
 
-	memmove(a + 3, a, 5);
-	ft_memmove(b + 3, b, 5);
-	printf("real: %s\nmeu : %s\n", a, b);
-	return(0);
-} 
+// 	memmove(a, a + 3, 5);
+// 	ft_memmove(b, b + 3, 5);
+// 	printf("libc: %s\nft_memmove: %s\n", a, b);
+// 	return (0);
+// }
