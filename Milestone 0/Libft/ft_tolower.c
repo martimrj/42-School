@@ -6,11 +6,13 @@
 /*   By: majesus <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026-10-29 20:04:10 by majesus           #+#    #+#             */
-/*   Updated: 2026-10-29 20:04:10 by majesus          ###   ########.fr       */
+/*   Updated: 2026-11-11 16:05:17 by majesus          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_tolower(int c)
+#include "libft.h"
+
+int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 		return (c + 32);

@@ -6,11 +6,13 @@
 /*   By: majesus <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026-10-28 19:13:53 by majesus           #+#    #+#             */
-/*   Updated: 2026-10-28 19:13:53 by majesus          ###   ########.fr       */
+/*   Updated: 2026-11-11 16:05:17 by majesus          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	isprint(int c)
+#include "libft.h"
+
+int	ft_isprint(int c)
 {
 	if (c >= 32 && c <= 126)
 		return (1);

@@ -6,14 +6,15 @@
 /*   By: majesus <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026-10-28 17:54:37 by majesus           #+#    #+#             */
-/*   Updated: 2026-10-28 17:54:37 by majesus          ###   ########.fr       */
+/*   Updated: 2026-11-11 16:05:17 by majesus          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
-int ft_isdigit (int c)
+int	ft_isdigit(int c)
 {
-	if (c >= 1 && c <= '9')
-		return(1);
-	return(0);
+	if (c >= '0' && c <= '9')
+		return (1);
+	return (0);
 }

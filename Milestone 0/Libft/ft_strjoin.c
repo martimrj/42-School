@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: majesus <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: o_teu_login <o_teu_login@student.42lisb    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026-11-04 19:43:08 by majesus           #+#    #+#             */
-/*   Updated: 2026-11-04 19:43:08 by majesus          ###   ########.fr       */
+/*   Created: 2026/11/04 19:43:08 by majesus           #+#    #+#             */
+/*   Updated: 2026/11/11 16:36:28 by o_teu_login      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,38 +14,27 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char	*s3;
+	char	*str;
 	size_t	i;
 	size_t	j;
 
-	if (!*s1 || !*s2)
+	if (!s1 || !s2)
 		return (NULL);
-	s3 = malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
-	if (!s3)
+	str = malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
+	if (!str)
 		return (NULL);
 	i = 0;
 	while (s1[i])
 	{
-		s3[i] = s1[i];
+		str[i] = s1[i];
 		i++;
 	}
 	j = 0;
 	while (s2[j])
 	{
-		s3[i + j] = s2[j];
+		str[i + j] = s2[j];
 		j++;
 	}
-	s3[i + j] = '\0';
-	return (s3);
+	str[i + j] = '\0';
+	return (str);
 }
-
-// int main(void)
-// {
-// 	char const *s1 = "Hello, ";
-// 	char const *s2 = "World!";
-// 	char *result = ft_strjoin(s1, s2);
-// 	printf("String1: %s  String2: %s\n", s1, s2);
-// 	printf("Juntando as duas: %s\n", result);
-// 	free(result);
-// 	return (0);
-// }

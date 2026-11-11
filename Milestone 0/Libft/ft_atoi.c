@@ -6,7 +6,7 @@
 /*   By: majesus <majesus@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 23:11:17 by majesus           #+#    #+#             */
-/*   Updated: 2026/11/10 18:32:41 by majesus          ###   ########.fr       */
+/*   Updated: 2026/11/11 16:05:17 by majesus          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,33 +14,25 @@
 
 int	ft_atoi(const char *nptr)
 {
-	int	i;
-	int	sinal;
-	int	resultado;
+	int		i;
+	int		signal;
+	long	result;
 
 	i = 0;
-	sinal = 1;
-	resultado = 0;
+	signal = 1;
+	result = 0;
 	while (nptr[i] == ' ' || (nptr[i] >= 9 && nptr[i] <= 13))
 		i++;
 	if (nptr[i] == '-' || nptr[i] == '+')
 	{
-		if (nptr[i] =='-')
-			sinal *= -1;
+		if (nptr[i] == '-')
+			signal = -1;
 		i++;
 	}
-	while (nptr[i] >= '0' && nptr[i] <='9')
+	while (nptr[i] >= '0' && nptr[i] <= '9')
 	{
-		resultado = (resultado * 10) + (nptr[i] - '0');
+		result = (result * 10) + (nptr[i] - '0');
 		i++;
 	}
-	return resultado * sinal;
-
+	return ((int)(result * signal));
 }
-
-// int	main(void)
-// {
-// 	printf("%d\n", ft_atoi("9223372036854775809"));
-//     printf("%d\n",    atoi("9223372036854775809"));
-// 	return (0);
-// }

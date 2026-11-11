@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   strlcpy.c                                          :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: majesus <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: majesus <majesus@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026-10-29 13:58:02 by majesus           #+#    #+#             */
-/*   Updated: 2026-10-29 13:58:02 by majesus          ###   ########.fr       */
+/*   Created: 2026/10/29 13:58:02 by majesus           #+#    #+#             */
+/*   Updated: 2026/11/11 16:48:17 by majesus          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,27 +14,20 @@
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	size_t		i;
+	size_t	i;
+	size_t	len;
 
-	i = 0;
+	if (!dst || !src)
+		return (0);
+	len = ft_strlen(src);
 	if (size == 0)
-		return (ft_strlen(src));
+		return (len);
+	i = 0;
 	while (src[i] && i < size - 1)
 	{
 		dst[i] = src[i];
 		i++;
 	}
 	dst[i] = '\0';
-	return (ft_strlen(dst));
+	return (len);
 }
-/*
-int	main(void)
-{
-	char	a[] = "Hello world!";
-	char	b[] = "";
-
-	printf("Antes: %s", b);
-	ft_strlcpy(b, a, 20);
-	printf("Depois: %s", b);
-}*/
-

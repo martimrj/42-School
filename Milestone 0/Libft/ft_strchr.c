@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   strchr.c                                           :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: majesus <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: o_teu_login <o_teu_login@student.42lisb    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026-10-29 20:04:42 by majesus           #+#    #+#             */
-/*   Updated: 2026-10-29 20:04:42 by majesus          ###   ########.fr       */
+/*   Created: 2026/10/29 20:04:42 by majesus           #+#    #+#             */
+/*   Updated: 2026/11/11 16:35:34 by o_teu_login      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,28 +14,16 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	int	i;
-	char	*str;
+	size_t	i;
 
 	i = 0;
-	str = (char *)s;
-	while (str[i])
+	while (s[i] != '\0')
 	{
-		if(str[i] == (char)c)
-			return ((char *)&str[i]);
+		if ((unsigned char)s[i] == (unsigned char)c)
+			return ((char *)&s[i]);
 		i++;
 	}
-	if((char)c == '\0')
-		return((char *)&str[i]);
+	if ((unsigned char)c == '\0')
+		return ((char *)&s[i]);
 	return (NULL);
 }
-// int main (void)
-// {
-// 	char	a[] = "aaba";
-// 	char	*n;
-
-// 	printf("%s\n", a);
-// 	n = ft_strchr(a, 'b');
-// 	printf("%s", n);
-
-// }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: majesus <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: o_teu_login <o_teu_login@student.42lisb    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026-11-04 16:04:07 by majesus           #+#    #+#             */
-/*   Updated: 2026-11-04 16:04:07 by majesus          ###   ########.fr       */
+/*   Created: 2026/11/04 16:04:07 by majesus           #+#    #+#             */
+/*   Updated: 2026/11/11 16:37:43 by o_teu_login      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,14 +16,14 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*sub;
 	size_t	i;
-	size_t  s_len;
+	size_t	s_len;
 
 	if (!s)
 		return (NULL);
 	s_len = ft_strlen(s);
 	if (start >= s_len)
-		len = 0;
-	else if (len > s_len + start)
+		return (ft_calloc(1, 1));
+	if (len > s_len - start)
 		len = s_len - start;
 	sub = malloc(len + 1);
 	if (!sub)
@@ -35,15 +35,5 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		i++;
 	}
 	sub[i] = '\0';
-	return (sub);	
-
+	return (sub);
 }
-
-// int main(void)
-// {
-// 	char	*s = "Hello World";
-// 	printf("String principal: %s\n", s);
-// 	char	*sub = ft_substr(s, 6, 5);
-// 	printf("String sub: %s\n", sub);
-// 	free(sub);
-// }

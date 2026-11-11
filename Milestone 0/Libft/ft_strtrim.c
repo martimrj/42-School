@@ -6,7 +6,7 @@
 /*   By: majesus <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026-11-04 20:15:48 by majesus           #+#    #+#             */
-/*   Updated: 2026-11-04 20:15:48 by majesus          ###   ########.fr       */
+/*   Updated: 2026-11-11 16:05:17 by majesus          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	start;
 	size_t	end;
 
-	if(!s1 || !set)
+	if (!s1 || !set)
 		return (NULL);
 	start = 0;
 	while (s1[start] && ft_strchr(set, s1[start]))
@@ -27,12 +27,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 		end--;
 	return (ft_substr(s1, start, end - start));
 }
-// int main (void)
-// {
-// 	char const *s1 = "xxaaxy";
-// 	char const *set = "x";
-// 	char *s2 = ft_strtrim(s1, set);
-// 	printf("String inicial: %s\n", s1);
-// 	printf("String final: %s\n", s2);
-// 	free(s2);
-//}
