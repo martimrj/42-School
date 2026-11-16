@@ -74,7 +74,7 @@ These work on raw bytes, so they take `void *` and treat the data as `unsigned c
 
 The usual values for `fd` are `1` (standard output) and `2` (standard error), but any open file descriptor works.
 
-### Linked lists
+### Part 3: Linked lists
 
 ```c
 typedef struct s_list
