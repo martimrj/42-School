@@ -51,15 +51,25 @@ char	*ft_itoa(int n)
 		str[0] = '-';
 	return (str);
 }
+/*
+#include <stdlib.h>
+#include <limits.h>
 
-// int main(void)
-// {
-// 	int number = -12345;
-// 	char *str = ft_itoa(number);
-// 	if (str)
-// 	{
-// 		printf("The string representation of %d is: %s\n", number, str);
-// 		free(str);
-// 	}
-// 	return 0;
-// }
+int	main(void)
+{
+	int		tests[] = {0, 7, -7, 10, 100, -123, INT_MAX, INT_MIN};
+	char	*s;
+	size_t	i;
+
+	i = 0;
+	while (i < sizeof(tests) / sizeof(tests[0]))
+	{
+		s = ft_itoa(tests[i]);
+		printf("%d -> [%s]\n", tests[i], s);
+		free(s);
+		i++;
+	}
+	return (0);
+}*/
+//cc -Wextra -Wall -Werror ft_itoa.c && ./a.out
+//2147483648

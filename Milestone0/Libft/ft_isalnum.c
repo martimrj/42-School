@@ -18,9 +18,15 @@ int	ft_isalnum(int c)
 		return (1);
 	return (0);
 }
-
-// int main(void)
-// {
-// 	printf("num: %d", ft_isalnum(200));
-// 	return (0);
-// }
+/*
+int main(void)
+{
+	printf("%d\n", ft_isalnum('5'));
+	printf("%d\n", ft_isalnum('a'));
+	printf("%d\n", ft_isalnum('Z'));
+	printf("%d\n", ft_isalnum('!'));
+	printf("%d\n", ft_isalnum(' '));
+	printf("%d\n", ft_isalnum(5));
+	return (0);
+}*/
+//cc -Wextra -Wall -Werror ft_isalnum.c ft_isalpha.c ft_isdigit.c && ./a.out

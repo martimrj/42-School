@@ -16,3 +16,24 @@ void	ft_bzero(void *s, size_t n)
 {
 	ft_memset(s, 0, n);
 }
+/*
+#include <stdio.h>
+#include <string.h>
+
+int	main(void)
+{
+	char	a[8] = "abcdefg";
+	char	b[8] = "abcdefg";
+	size_t	i;
+
+	bzero(a, 4);
+	ft_bzero(b, 4);
+	i = 0;
+	while (i < 8)
+	{
+		printf("%d %d\n", a[i], b[i]);
+		i++;
+	}
+	return (0);
+}*/
+//cc -Wextra -Wall -Werror ft_bzero.c ft_memset.c && ./a.out

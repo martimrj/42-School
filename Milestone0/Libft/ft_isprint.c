@@ -18,3 +18,15 @@ int	ft_isprint(int c)
 		return (1);
 	return (0);
 }
+/*
+int main(void)
+{
+	printf("%d\n", ft_isprint('5'));
+	printf("%d\n", ft_isprint('a'));
+	printf("%d\n", ft_isprint('Z'));
+	printf("%d\n", ft_isprint('!'));
+	printf("%d\n", ft_isprint(' '));
+	printf("%d\n", ft_isprint(-1));
+	return (0);
+}*/
+//cc -Wextra -Wall -Werror ft_isprint.c && ./a.out

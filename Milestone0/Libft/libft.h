@@ -6,7 +6,7 @@
 /*   By: majesus <majesus@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/28 17:58:10 by majesus           #+#    #+#             */
-/*   Updated: 2026/11/13 14:09:08 by majesus          ###   ########.fr       */
+/*   Updated: 2026/11/14 22:32:04 by majesus          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 # include <stddef.h>
 # include <stdlib.h>
-# include <stdio.h>
+# include <stdint.h>
 # include <unistd.h>
 
 int				ft_atoi(const char *nptr);

@@ -18,3 +18,15 @@ int	ft_isalpha(int c)
 		return (1);
 	return (0);
 }
+/*
+int main(void)
+{
+	printf("%d\n", ft_isalpha('5'));
+	printf("%d\n", ft_isalpha('a'));
+	printf("%d\n", ft_isalpha('Z'));
+	printf("%d\n", ft_isalpha('!'));
+	printf("%d\n", ft_isalpha(' '));
+	printf("%d\n", ft_isalpha(5));
+	return (0);
+}*/
+//cc -Wextra -Wall -Werror ft_isalpha.c && ./a.out

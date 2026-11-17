@@ -18,3 +18,15 @@ int	ft_isascii(int c)
 		return (1);
 	return (0);
 }
+/*
+int main(void)
+{
+	printf("%d\n", ft_isascii('5'));
+	printf("%d\n", ft_isascii('a'));
+	printf("%d\n", ft_isascii('Z'));
+	printf("%d\n", ft_isascii('!'));
+	printf("%d\n", ft_isascii(' '));
+	printf("%d\n", ft_isascii(-1));
+	return (0);
+}*/
+//cc -Wextra -Wall -Werror ft_isascii.c && ./a.out

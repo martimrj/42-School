@@ -38,7 +38,7 @@ These work on raw bytes, so they take `void *` and treat the data as `unsigned c
 | `ft_bzero` | `void ft_bzero(void *s, size_t n)` | Sets `n` bytes to zero. |
 | `ft_memcpy` | `void *ft_memcpy(void *dest, const void *src, size_t n)` | Copies `n` bytes from `src` to `dest`. The areas must not overlap. |
 | `ft_memmove` | `void *ft_memmove(void *dest, const void *src, size_t n)` | Same as `ft_memcpy`, but correct even when the areas overlap. |
-| `ft_memchr` | `void *ft_memchr(const void *s, int c, size_t n)` | Returns a pointer to the first byte equal to `c` within `n` bytes, or `NULL`. A zero byte is not treated as an end marker. |
+| `ft_memchr` | `void *ft_memchr(const void *s, int c, size_t n)` |  Bonus: lReturns a pointer to the first byte equal to `c` within `n` bytes, or `NULL`. A zero byte is not treated as an end marker. |
 | `ft_memcmp` | `int ft_memcmp(const void *s1, const void *s2, size_t n)` | Compares `n` bytes and returns the difference of the first pair that differs (0 if equal). |
 | `ft_calloc` | `void *ft_calloc(size_t nmemb, size_t size)` | Allocates `nmemb * size` bytes set to zero. Returns `NULL` if the multiplication would overflow or if `malloc` fails. |
 
@@ -74,7 +74,7 @@ These work on raw bytes, so they take `void *` and treat the data as `unsigned c
 
 The usual values for `fd` are `1` (standard output) and `2` (standard error), but any open file descriptor works.
 
-### Bonus: linked lists
+### Linked lists
 
 ```c
 typedef struct s_list
@@ -160,4 +160,4 @@ Each function was checked against the real libc version (or against the expected
 - Documentation for AddressSanitizer and Valgrind.
 - Articles and tutorials on pointers, function pointers, and singly linked lists in C.
 
-**AI usage:** Claude (Anthropic) was used as a study aid: to explain concepts (pointers, `size_t`, function pointers, linked lists, memory ownership), to review my code and point out bugs, to help read compiler, sanitizer, and tester output, and to help draft this README. Some corrected snippets suggested during review were used or adapted. I read, tested, and understood every function before including it.
+**AI usage:** Claude (Anthropic) was used as a study aid: to explain concepts (pointers, `size_t`, function pointers, linked lists, memory ownership), to review my code and point out bugs, to help read compiler, sanitizer, and tester output, and to help draft this README.

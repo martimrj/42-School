@@ -18,3 +18,15 @@ int	ft_isdigit(int c)
 		return (1);
 	return (0);
 }
+/*
+int main(void)
+{
+	printf("%d\n", ft_isdigit('5'));
+	printf("%d\n", ft_isdigit('a'));
+	printf("%d\n", ft_isdigit('Z'));
+	printf("%d\n", ft_isdigit('!'));
+	printf("%d\n", ft_isdigit(' '));
+	printf("%d\n", ft_isdigit(-1));
+	return (0);
+}*/
+//cc -Wextra -Wall -Werror ft_isdigit.c && ./a.out
