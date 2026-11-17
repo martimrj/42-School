@@ -6,7 +6,7 @@
 /*   By: majesus <majesus@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 20:46:26 by majesus           #+#    #+#             */
-/*   Updated: 2026/11/17 13:49:53 by majesus          ###   ########.fr       */
+/*   Updated: 2026/11/17 16:55:41 by majesus          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,4 +42,4 @@ int	main(void)
 	printf("5) %d\n", ft_memchr(s, '\0', 5) == memchr(s, '\0', 5));
 	return (0);
 }*/
-//cc -Wall -Wextra -Werror ft_memchr.c
+// cc -Wall -Wextra -Werror *.c -o test_ft_memchr

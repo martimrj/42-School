@@ -6,7 +6,7 @@
 /*   By: majesus <majesus@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/11 20:26:18 by majesus           #+#    #+#             */
-/*   Updated: 2026/11/17 13:16:13 by majesus          ###   ########.fr       */
+/*   Updated: 2026/11/17 16:55:18 by majesus          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,4 +31,4 @@ int	main(void)
 	printf("depois: %s\n", (char *)a->content);
 	return (0);
 }*/
-//cc -Wall -Wextra -Werror ft_lstdelone.c ft_lstnew.c
+// cc -Wall -Wextra -Werror *.c -o test_ft_lstdelone

@@ -6,7 +6,7 @@
 /*   By: majesus <majesus@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/11 18:19:32 by majesus           #+#    #+#             */
-/*   Updated: 2026/11/11 18:33:59 by majesus          ###   ########.fr       */
+/*   Updated: 2026/11/17 16:30:50 by majesus          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,18 +25,19 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		i++;
 	}
 }
-// void	maiuscula(unsigned int i, char *c)
-// {
-//     (void)i;
-//     *c = ft_toupper(*c);
-// }
+/*
+static void	uppercase_char(unsigned int i, char *c)
+{
+	(void)i;
+	*c = ft_toupper(*c);
+}
 
-// int	main(void)
-// {
-//     char	s[] = "abcd";
+int	main(void)
+{
+	char	str[] = "libft";
 
-//     printf("String original: %s\n", s);
-//     ft_striteri(s, maiuscula);
-//     printf("String alterada: %s\n", s);
-//     return (0);
-// }
+	ft_striteri(str, uppercase_char);
+	ft_putendl_fd(str, 1);
+	return (0);
+}*/
+// cc -Wall -Wextra -Werror *.c -o test_ft_striteri

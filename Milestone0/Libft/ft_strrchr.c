@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: o_teu_login <o_teu_login@student.42lisb    +#+  +:+       +#+        */
+/*   By: majesus <majesus@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/30 14:52:26 by majesus           #+#    #+#             */
-/*   Updated: 2026/11/11 16:37:35 by o_teu_login      ###   ########.fr       */
+/*   Updated: 2026/11/17 16:56:56 by majesus          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,14 @@ char	*ft_strrchr(const char *s, int c)
 		return ((char *)&s[ft_strlen(s)]);
 	return (NULL);
 }
+/*
+int	main(void)
+{
+	char	*found;
+
+	found = ft_strrchr("banana", 'a');
+	if (found)
+		ft_putendl_fd(found, 1);
+	return (0);
+}*/
+// cc -Wall -Wextra -Werror *.c -o test_ft_strrchr

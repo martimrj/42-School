@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: majesus <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: majesus <majesus@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026-10-27 13:35:04 by majesus           #+#    #+#             */
-/*   Updated: 2026-11-11 16:05:17 by majesus          ###   ########.fr       */
+/*   Created: 2026/10/27 13:35:04 by majesus           #+#    #+#             */
+/*   Updated: 2026/11/17 16:54:43 by majesus          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,4 +29,4 @@ int main(void)
 	printf("%d\n", ft_isalpha(5));
 	return (0);
 }*/
-//cc -Wextra -Wall -Werror ft_isalpha.c && ./a.out
+// cc -Wall -Wextra -Werror *.c -o test_ft_isalpha

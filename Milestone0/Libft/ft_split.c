@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: majesus	<majesus@student.42lisboa 	  	+#+  +:+       +#+        */
+/*   By: majesus	<majesus@student.42lisboa.com>	+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/08 18:32:58 by majesus           #+#    #+#             */
 /*   Updated: 2026/11/11 16:31:54 by majesus	      ###   ########.fr       */
@@ -79,22 +79,24 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	return (fill_words(res, s, c));
 }
-// int main(int argc, char const *argv[])
-// {
-// 	char **res;
-// 	res = ft_split("   ", ' ');
 
-// 	int i = 0;
-// 	while (res[i])
-// 	{
-// 		printf(">%s<\n", res[i]);
-// 		i++;
-// 	}
-// 	while (res[i])
-// 	{
-// 		free(res[i]);
-// 		i++;
-// 	}
-// 	free(res);
-// 	return 0;
-// }
+/*
+int	main(void)
+{
+	char	**words;
+	size_t	i;
+
+	words = ft_split("ola,mundo,libft", ',');
+	if (!words)
+		return (1);
+	i = 0;
+	while (words[i])
+	{
+		ft_putendl_fd(words[i], 1);
+		free(words[i]);
+		i++;
+	}
+	free(words);
+	return (0);
+}*/
+// cc -Wall -Wextra -Werror *.c -o test_ft_split

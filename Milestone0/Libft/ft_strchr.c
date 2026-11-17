@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: o_teu_login <o_teu_login@student.42lisb    +#+  +:+       +#+        */
+/*   By: majesus <majesus@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/29 20:04:42 by majesus           #+#    #+#             */
-/*   Updated: 2026/11/11 16:35:34 by o_teu_login      ###   ########.fr       */
+/*   Updated: 2026/11/17 16:56:26 by majesus          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,15 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)&s[i]);
 	return (NULL);
 }
+/*
+int	main(void)
+{
+	char	*result;
+
+	result = ft_strchr("libft", 'b');
+	if (result)
+		ft_putstr_fd(result, 1);
+	ft_putchar_fd('\n', 1);
+	return (0);
+}*/
+// cc -Wall -Wextra -Werror *.c -o test_ft_strchr

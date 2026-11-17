@@ -6,7 +6,7 @@
 /*   By: majesus <majesus@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/09 23:15:00 by majesus           #+#    #+#             */
-/*   Updated: 2026/11/17 15:35:20 by majesus          ###   ########.fr       */
+/*   Updated: 2026/11/17 16:54:16 by majesus          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,7 @@ char	*ft_itoa(int n)
 }
 /*
 #include <stdlib.h>
+#include <stdio.h>
 #include <limits.h>
 
 int	main(void)
@@ -71,5 +72,4 @@ int	main(void)
 	}
 	return (0);
 }*/
-//cc -Wextra -Wall -Werror ft_itoa.c && ./a.out
-//2147483648
+// cc -Wall -Wextra -Werror *.c -o test_ft_itoa

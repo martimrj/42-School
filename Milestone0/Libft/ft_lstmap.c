@@ -6,7 +6,7 @@
 /*   By: majesus <majesus@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/13 12:25:59 by majesus           #+#    #+#             */
-/*   Updated: 2026/11/17 13:03:29 by majesus          ###   ########.fr       */
+/*   Updated: 2026/11/17 16:55:29 by majesus          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,5 +58,4 @@ int	main(void)
 	ft_lstclear(&b, free);
 	return (0);
 }*/
-//cc -Wall -Wextra -Werror ft_lstmap.c ft_lstadd_back.c ft_lstnew.c ft_lstclear.c ft_strdup.c ft_strlen.c
-
+// cc -Wall -Wextra -Werror *.c -o test_ft_lstmap

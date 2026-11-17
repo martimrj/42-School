@@ -6,7 +6,7 @@
 /*   By: majesus <majesus@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/11 17:51:44 by majesus           #+#    #+#             */
-/*   Updated: 2026/11/11 18:11:55 by majesus          ###   ########.fr       */
+/*   Updated: 2026/11/17 16:56:49 by majesus          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,26 +33,22 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	str[i] = '\0';
 	return (str);
 }
-// char	Maisum(unsigned int i, char c)
-// {
-// 	(void)i;
-// 	return (c + 1);
-// }
+/*
+static char	shift_char(unsigned int i, char c)
+{
+	(void)i;
+	return (c + 1);
+}
 
-// int	main(void)
-// {
-// 	char *str = "abcde";
-// 	printf("String original: %s\n", str);
-// 	printf("Strind alterada: %s\n", ft_strmapi(str, Maisum));
-// }char	Maisum(unsigned int i, char c)
-// {
-// 	(void)i;
-// 	return (c + 1);
-// }
+int	main(void)
+{
+	char	*mapped;
 
-// int	main(void)
-// {
-// 	char *str = "abcde";
-// 	printf("String original: %s\n", str);
-// 	printf("Strind alterada: %s\n", ft_strmapi(str, Maisum));
-// }
+	mapped = ft_strmapi("abc", shift_char);
+	if (!mapped)
+		return (1);
+	ft_putendl_fd(mapped, 1);
+	free(mapped);
+	return (0);
+}*/
+// cc -Wall -Wextra -Werror *.c -o test_ft_strmapi

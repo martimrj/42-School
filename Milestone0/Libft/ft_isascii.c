@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: majesus <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: majesus <majesus@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026-10-28 18:40:23 by majesus           #+#    #+#             */
-/*   Updated: 2026-11-11 16:05:17 by majesus          ###   ########.fr       */
+/*   Created: 2026/10/28 18:40:23 by majesus           #+#    #+#             */
+/*   Updated: 2026/11/17 16:54:46 by majesus          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,4 +29,4 @@ int main(void)
 	printf("%d\n", ft_isascii(-1));
 	return (0);
 }*/
-//cc -Wextra -Wall -Werror ft_isascii.c && ./a.out
+// cc -Wall -Wextra -Werror *.c -o test_ft_isascii

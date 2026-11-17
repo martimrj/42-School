@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: majesus <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: majesus <majesus@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026-11-02 23:29:58 by majesus           #+#    #+#             */
-/*   Updated: 2026-11-11 16:05:17 by majesus          ###   ########.fr       */
+/*   Created: 2026/11/02 23:29:58 by majesus           #+#    #+#             */
+/*   Updated: 2026/11/17 16:54:32 by majesus          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,4 +47,4 @@ int	main(void)
 	printf("overflow: %p\n", ft_calloc(SIZE_MAX, 2));
 	return (0);
 }*/
-//cc -Wextra -Wall -Werror ft_calloc.c ft_memset.c ft_bzero.c && ./a.out
+// cc -Wall -Wextra -Werror *.c -o test_ft_calloc

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: o_teu_login <o_teu_login@student.42lisb    +#+  +:+       +#+        */
+/*   By: majesus <majesus@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/30 17:08:53 by majesus           #+#    #+#             */
-/*   Updated: 2026/11/11 16:37:18 by o_teu_login      ###   ########.fr       */
+/*   Updated: 2026/11/17 16:32:57 by majesus          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,11 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
+/*
+int	main(void)
+{
+	ft_putnbr_fd(ft_strncmp("abc", "abd", 3), 1);
+	ft_putchar_fd('\n', 1);
+	return (0);
+}*/
+// cc -Wall -Wextra -Werror *.c -o test_ft_strncmp

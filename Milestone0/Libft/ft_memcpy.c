@@ -6,7 +6,7 @@
 /*   By: majesus <majesus@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/28 19:58:12 by majesus           #+#    #+#             */
-/*   Updated: 2026/11/17 15:32:01 by majesus          ###   ########.fr       */
+/*   Updated: 2026/11/17 16:56:02 by majesus          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,4 +42,4 @@ int	main(void)
 	printf("dst: %s\n", (char *)ft_memcpy(dst, src, 6));
 	return (0);
 }*/
-//cc -Wextra -Werror -Wall ft_memcpy.c
+// cc -Wall -Wextra -Werror *.c -o test_ft_memcpy

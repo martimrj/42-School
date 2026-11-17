@@ -6,7 +6,7 @@
 /*   By: majesus <majesus@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 23:11:17 by majesus           #+#    #+#             */
-/*   Updated: 2026/11/17 12:14:22 by majesus          ###   ########.fr       */
+/*   Updated: 2026/11/17 16:51:03 by majesus          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,4 +47,4 @@ int main (void)
 	printf("atoi: %d\n", atoi(nptr));
 	return (0);
 }*/
-//cc -Wextra -Wall -Werror ft_atoi.c && ./a.out
+// cc -Wall -Wextra -Werror *.c -o test_ft_atoi

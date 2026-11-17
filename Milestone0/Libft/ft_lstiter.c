@@ -6,7 +6,7 @@
 /*   By: majesus <majesus@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/11 21:55:28 by majesus           #+#    #+#             */
-/*   Updated: 2026/11/17 13:13:49 by majesus          ###   ########.fr       */
+/*   Updated: 2026/11/17 16:58:02 by majesus          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,15 +22,14 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 		lst = lst->next;
 	}
 }
-
-
+/*
 #include <stdio.h>
 
 void	f(void *c)
 {
 	printf("f: %s\n", (char *)c);
 }
-/*
+
 int	main(void)
 {
 	t_list	*a = ft_lstnew("1");
@@ -45,4 +44,4 @@ int	main(void)
 	free(a);
 	return (0);
 }*/
-//cc -Wall -Wextra -Werror ft_lstiter.c
+// cc -Wall -Wextra -Werror *.c -o test_ft_lstiter

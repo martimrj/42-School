@@ -6,7 +6,7 @@
 /*   By: majesus <majesus@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/04 19:43:08 by majesus           #+#    #+#             */
-/*   Updated: 2026/11/17 15:32:20 by majesus          ###   ########.fr       */
+/*   Updated: 2026/11/17 16:56:37 by majesus          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,3 +38,17 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	str[i + j] = '\0';
 	return (str);
 }
+/*
+int	main(void)
+{
+	char	*joined;
+
+	joined = ft_strjoin("Ola, ", "mundo!");
+	if (!joined)
+		return (1);
+	ft_putstr_fd(joined, 1);
+	ft_putchar_fd('\n', 1);
+	free(joined);
+	return (0);
+}*/
+// cc -Wall -Wextra -Werror *.c -o test_ft_strjoin

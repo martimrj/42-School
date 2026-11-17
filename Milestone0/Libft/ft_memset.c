@@ -6,7 +6,7 @@
 /*   By: majesus <majesus@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/28 19:21:58 by majesus           #+#    #+#             */
-/*   Updated: 2026/11/17 14:41:35 by majesus          ###   ########.fr       */
+/*   Updated: 2026/11/17 16:56:11 by majesus          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
-
+/*
 #include <stdio.h>
 
 int	main(void)
@@ -37,4 +37,5 @@ int	main(void)
 	printf("original :%s\n", str);
 	printf("%s\n", (char *)ft_memset(str, c, n));
 	return (0);
-}
+}*/
+// cc -Wall -Wextra -Werror *.c -o test_ft_memset

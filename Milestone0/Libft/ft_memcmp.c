@@ -6,7 +6,7 @@
 /*   By: majesus <majesus@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 21:44:26 by majesus           #+#    #+#             */
-/*   Updated: 2026/11/17 13:57:09 by majesus          ###   ########.fr       */
+/*   Updated: 2026/11/17 16:55:44 by majesus          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,4 +37,4 @@ int main(void)
 	printf("d\n", ft_memcmp("abc", "abd", 3));
 	return (0);
 }*/
-//cc -Wextra -Werror -Wall ft_memcmp.c
+// cc -Wall -Wextra -Werror *.c -o test_ft_memcmp

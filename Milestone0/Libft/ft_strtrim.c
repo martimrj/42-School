@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: majesus <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: majesus <majesus@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026-11-04 20:15:48 by majesus           #+#    #+#             */
-/*   Updated: 2026-11-11 16:05:17 by majesus          ###   ########.fr       */
+/*   Created: 2026/11/04 20:15:48 by majesus           #+#    #+#             */
+/*   Updated: 2026/11/17 16:58:33 by majesus          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,16 @@ char	*ft_strtrim(char const *s1, char const *set)
 		end--;
 	return (ft_substr(s1, start, end - start));
 }
+/*
+int	main(void)
+{
+	char	*trimmed;
+
+	trimmed = ft_strtrim("***libft***", "*");
+	if (!trimmed)
+		return (1);
+	ft_putendl_fd(trimmed, 1);
+	free(trimmed);
+	return (0);
+}*/
+// cc -Wall -Wextra -Werror *.c -o test_ft_strtrim

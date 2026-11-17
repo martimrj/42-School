@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: o_teu_login <o_teu_login@student.42lisb    +#+  +:+       +#+        */
+/*   By: majesus <majesus@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/04 15:21:42 by majesus           #+#    #+#             */
-/*   Updated: 2026/11/11 16:35:52 by o_teu_login      ###   ########.fr       */
+/*   Updated: 2026/11/17 16:56:31 by majesus          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,17 @@ char	*ft_strdup(const char *s)
 	dup[i] = '\0';
 	return (dup);
 }
+/*
+int	main(void)
+{
+	char	*copy;
+
+	copy = ft_strdup("Hello, world!");
+	if (!copy)
+		return (1);
+	ft_putstr_fd(copy, 1);
+	ft_putchar_fd('\n', 1);
+	free(copy);
+	return (0);
+}*/
+// cc -Wall -Wextra -Werror *.c -o test_ft_strdup

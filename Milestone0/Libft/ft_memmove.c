@@ -6,7 +6,7 @@
 /*   By: majesus <majesus@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/28 20:17:50 by majesus           #+#    #+#             */
-/*   Updated: 2026/11/17 14:38:26 by majesus          ###   ########.fr       */
+/*   Updated: 2026/11/17 16:56:07 by majesus          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,4 +47,4 @@ int	main(void)
 	printf("Copied string: %s\n", dest);
 	return (0);
 }*/
-//cc -Wextra -Werror -Wall ft_memmove.c ft_memcpy.c
+// cc -Wall -Wextra -Werror *.c -o test_ft_memmove

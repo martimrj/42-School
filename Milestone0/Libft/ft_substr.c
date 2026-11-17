@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: o_teu_login <o_teu_login@student.42lisb    +#+  +:+       +#+        */
+/*   By: majesus <majesus@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/04 16:04:07 by majesus           #+#    #+#             */
-/*   Updated: 2026/11/11 16:37:43 by o_teu_login      ###   ########.fr       */
+/*   Updated: 2026/11/17 16:53:24 by majesus          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,3 +37,16 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	sub[i] = '\0';
 	return (sub);
 }
+/*
+int	main(void)
+{
+	char	*sub;
+
+	sub = ft_substr("libft", 1, 3);
+	if (!sub)
+		return (1);
+	ft_putendl_fd(sub, 1);
+	free(sub);
+	return (0);
+}*/
+// cc -Wall -Wextra -Werror *.c -o test_ft_substr

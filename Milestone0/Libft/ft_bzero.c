@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: majesus <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: majesus <majesus@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026-10-28 19:39:15 by majesus           #+#    #+#             */
-/*   Updated: 2026-11-11 16:05:17 by majesus          ###   ########.fr       */
+/*   Created: 2026/10/28 19:39:15 by majesus           #+#    #+#             */
+/*   Updated: 2026/11/17 16:54:26 by majesus          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,4 +37,4 @@ int	main(void)
 	}
 	return (0);
 }*/
-//cc -Wextra -Wall -Werror ft_bzero.c ft_memset.c && ./a.out
+// cc -Wall -Wextra -Werror *.c -o test_ft_bzero

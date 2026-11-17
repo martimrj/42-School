@@ -6,7 +6,7 @@
 /*   By: majesus <majesus@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/11 19:58:41 by majesus           #+#    #+#             */
-/*   Updated: 2026/11/17 13:33:32 by majesus          ###   ########.fr       */
+/*   Updated: 2026/11/17 16:55:36 by majesus          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,4 +37,4 @@ int main(void)
 	free(a);
 	return (0);
 }*/
-//cc -Wall -Wextra -Werror ft_lstsize.c ft_lstnew.c ft_lstadd_back.c
+// cc -Wall -Wextra -Werror *.c -o test_ft_lstsize
