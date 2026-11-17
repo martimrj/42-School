@@ -35,8 +35,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 
 int	main(void)
 {
-	char	src[5] = "Hello";
-	char	dst[5];
+	char	src[6] = "Hello";
+	char	dst[6];
 
 	printf("src: %s\n", src);
 	printf("dst: %s\n", (char *)ft_memcpy(dst, src, 6));

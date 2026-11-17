@@ -28,7 +28,6 @@ int	main(void)
 
 	printf("antes: %s\n", (char *)a->content);
 	ft_lstdelone(a, free);
-	printf("depois: %s\n", (char *)a->content);
 	return (0);
 }*/
 // cc -Wall -Wextra -Werror *.c -o test_ft_lstdelone

@@ -34,7 +34,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 
 int main(void)
 {
-	printf("d\n", ft_memcmp("abc", "abd", 3));
+	printf("%d\n", ft_memcmp("abc", "abd", 3));
 	return (0);
 }*/
 // cc -Wall -Wextra -Werror *.c -o test_ft_memcmp

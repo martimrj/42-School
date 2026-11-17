@@ -19,6 +19,7 @@ int	ft_isascii(int c)
 	return (0);
 }
 /*
+#include <stdio.h>
 int main(void)
 {
 	printf("%d\n", ft_isascii('5'));

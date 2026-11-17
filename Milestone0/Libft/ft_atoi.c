@@ -39,6 +39,7 @@ int	ft_atoi(const char *nptr)
 	return ((int)(result * signal));
 }
 /*# include <stdlib.h>
+# include <stdio.h>
 
 int main (void)
 {

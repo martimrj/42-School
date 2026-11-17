@@ -31,7 +31,7 @@ void	*ft_memset(void *s, int c, size_t n)
 
 int	main(void)
 {
-	char	*str = "Hello World";
+	char	str[] = "Hello World";
 	int 	c = 0;
 	size_t	n = 5;
 	printf("original :%s\n", str);

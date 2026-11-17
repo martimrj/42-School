@@ -160,4 +160,4 @@ Each function was checked against the real libc version (or against the expected
 - Documentation for AddressSanitizer and Valgrind.
 - Articles and tutorials on pointers, function pointers, and singly linked lists in C.
 
-**AI usage:** Claude (Anthropic) was used as a study aid: to explain concepts (pointers, `size_t`, function pointers, linked lists, memory ownership), to review my code and point out bugs, to help read compiler, sanitizer, and tester output, and to help draft this README.
+**AI usage:** Claude (Anthropic) was used as a study aid: to explain concepts (pointers, `size_t`, function pointers, linked lists, memory ownership), to review my code and point out bugs, to help read compiler, sanitizer, and tester output.

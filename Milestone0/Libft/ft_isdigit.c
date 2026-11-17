@@ -19,6 +19,7 @@ int	ft_isdigit(int c)
 	return (0);
 }
 /*
+#include <stdio.h>
 int main(void)
 {
 	printf("%d\n", ft_isdigit('5'));
