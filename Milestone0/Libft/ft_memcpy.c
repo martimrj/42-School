@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: o_teu_login <o_teu_login@student.42lisb    +#+  +:+       +#+        */
+/*   By: majesus <majesus@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/28 19:58:12 by majesus           #+#    #+#             */
-/*   Updated: 2026/11/11 16:26:19 by o_teu_login      ###   ########.fr       */
+/*   Updated: 2026/11/17 14:28:06 by majesus          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,3 +30,16 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+/*
+# include <stdio.h>
+
+int	main(void)
+{
+	char	src[5] = "Hello";
+	char	dst[5];
+
+	printf("src: %s\n", src);
+	printf("dst: %s\n", (char *)ft_memcpy(dst, src, 6));
+	return (0);
+}*/
+//cc -Wextra -Werror -Wall ft_memcpy.c

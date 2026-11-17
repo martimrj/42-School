@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: majesus <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: majesus <majesus@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026-10-28 19:21:58 by majesus           #+#    #+#             */
-/*   Updated: 2026-11-11 16:05:17 by majesus          ###   ########.fr       */
+/*   Created: 2026/10/28 19:21:58 by majesus           #+#    #+#             */
+/*   Updated: 2026/11/17 14:41:35 by majesus          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,4 +25,16 @@ void	*ft_memset(void *s, int c, size_t n)
 		i++;
 	}
 	return (s);
+}
+
+#include <stdio.h>
+
+int	main(void)
+{
+	char	*str = "Hello World";
+	int 	c = 0;
+	size_t	n = 5;
+	printf("original :%s\n", str);
+	printf("%s\n", (char *)ft_memset(str, c, n));
+	return (0);
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: o_teu_login <o_teu_login@student.42lisb    +#+  +:+       +#+        */
+/*   By: majesus <majesus@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/28 20:17:50 by majesus           #+#    #+#             */
-/*   Updated: 2026/11/11 16:26:34 by o_teu_login      ###   ########.fr       */
+/*   Updated: 2026/11/17 14:38:26 by majesus          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,3 +32,19 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+/*
+#include <stdio.h>
+
+int	main(void)
+{
+	char	dest[20];
+	const char	*src = "Hello, World!";
+	size_t	n = 5;
+
+	ft_memmove(dest, src, n);
+	dest[n] = '\0';
+
+	printf("Copied string: %s\n", dest);
+	return (0);
+}*/
+//cc -Wextra -Werror -Wall ft_memmove.c ft_memcpy.c

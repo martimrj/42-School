@@ -6,7 +6,7 @@
 /*   By: majesus <majesus@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 20:46:26 by majesus           #+#    #+#             */
-/*   Updated: 2026/11/11 16:56:22 by majesus          ###   ########.fr       */
+/*   Updated: 2026/11/17 13:49:53 by majesus          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,19 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
+/*
+#include <stdio.h>
+#include <string.h>
+
+int	main(void)
+{
+	char	s[] = "ab\0cd";
+
+	printf("1) %d\n", ft_memchr(s, 'c', 5) == memchr(s, 'c', 5));
+	printf("2) %d\n", ft_memchr(s, 'c', 3) == memchr(s, 'c', 3));
+	printf("3) %d\n", ft_memchr(s, 'a', 0) == memchr(s, 'a', 0));
+	printf("4) %d\n", ft_memchr(s, 'a' + 256, 5) == memchr(s, 'a' + 256, 5));
+	printf("5) %d\n", ft_memchr(s, '\0', 5) == memchr(s, '\0', 5));
+	return (0);
+}*/
+//cc -Wall -Wextra -Werror ft_memchr.c

@@ -6,7 +6,7 @@
 /*   By: majesus <majesus@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/11 20:02:59 by majesus           #+#    #+#             */
-/*   Updated: 2026/11/11 22:07:06 by majesus          ###   ########.fr       */
+/*   Updated: 2026/11/17 13:08:47 by majesus          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,3 +20,19 @@ t_list	*ft_lstlast(t_list *lst)
 		lst = lst->next;
 	return (lst);
 }
+/*
+#include <stdio.h>
+
+int	main(void)
+{
+	t_list	*lista = ft_lstnew("C");
+
+	ft_lstadd_front(&lista, ft_lstnew("B"));
+	ft_lstadd_front(&lista, ft_lstnew("A"));
+	printf("ft_lstlast: %s\n", (char *)ft_lstlast(lista)->content);
+	free(lista->next->next);
+	free(lista->next);
+	free(lista);
+	return (0);
+}*/
+//cc -Wall -Wextra -Werror ft_lstlast.c ft_lstadd_front.c ft_lstnew.c

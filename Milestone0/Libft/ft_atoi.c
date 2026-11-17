@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: majesus <majesus@student.42.fr>            +#+  +:+       +#+        */
+/*   By: majesus <majesus@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 23:11:17 by majesus           #+#    #+#             */
-/*   Updated: 2026/11/11 16:05:17 by majesus          ###   ########.fr       */
+/*   Updated: 2026/11/17 12:14:22 by majesus          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_atoi(const char *nptr)
 {
-	int	i;
-	int	signal;
-	long result;
+	int		i;
+	int		signal;
+	long	result;
 
 	i = 0;
 	signal = 1;
@@ -36,7 +36,7 @@ int	ft_atoi(const char *nptr)
 		result = (result * 10) + (nptr[i] - '0');
 		i++;
 	}
-	return (int)(result * signal);
+	return ((int)(result * signal));
 }
 /*# include <stdlib.h>
 
