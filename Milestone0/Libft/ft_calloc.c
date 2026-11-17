@@ -6,7 +6,7 @@
 /*   By: majesus <majesus@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 23:29:58 by majesus           #+#    #+#             */
-/*   Updated: 2026/11/17 17:21:21 by majesus          ###   ########.fr       */
+/*   Updated: 2026/11/17 17:31:50 by majesus          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,18 +17,13 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	void	*ptr;
 
 	if (nmemb == 0 || size == 0)
-	{
-		ptr = malloc(1);
-		if (!ptr)
-			return (NULL);
-		return (ptr);
-	}
+		return (malloc(1));
 	if (nmemb > SIZE_MAX / size)
 		return (NULL);
 	ptr = malloc(nmemb * size);
 	if (ptr == NULL)
 		return (NULL);
-	ft_memset(ptr, 0, nmemb * size);
+	ft_bzero(ptr, nmemb * size);
 	return (ptr);
 }
 /*

@@ -6,11 +6,11 @@
 
 Libft is the first project of the 42 Common Core. The goal is to build our own small C library, `libft.a`, by re-implementing a selection of standard C functions and adding a few extra utilities. The library is then reused in later projects, so every function has to be correct, norm-compliant, and safe with memory.
 
-The project has three parts:
+The project has three required parts:
 
 1. **Libc re-implementations**: the same behaviour as the originals, but with an `ft_` prefix.
 2. **Additional functions**: string and output helpers that are not in the libc.
-3. **Bonus**: a minimal singly linked list API.
+3. **Linked lists**: a singly linked list API.
 
 Everything is compiled with `-Wall -Wextra -Werror` and archived with `ar` into a static library.
 
@@ -38,7 +38,7 @@ These work on raw bytes, so they take `void *` and treat the data as `unsigned c
 | `ft_bzero` | `void ft_bzero(void *s, size_t n)` | Sets `n` bytes to zero. |
 | `ft_memcpy` | `void *ft_memcpy(void *dest, const void *src, size_t n)` | Copies `n` bytes from `src` to `dest`. The areas must not overlap. |
 | `ft_memmove` | `void *ft_memmove(void *dest, const void *src, size_t n)` | Same as `ft_memcpy`, but correct even when the areas overlap. |
-| `ft_memchr` | `void *ft_memchr(const void *s, int c, size_t n)` |  Bonus: lReturns a pointer to the first byte equal to `c` within `n` bytes, or `NULL`. A zero byte is not treated as an end marker. |
+| `ft_memchr` | `void *ft_memchr(const void *s, int c, size_t n)` | Returns a pointer to the first byte equal to `c` within `n` bytes, or `NULL`. A zero byte is not treated as an end marker. |
 | `ft_memcmp` | `int ft_memcmp(const void *s1, const void *s2, size_t n)` | Compares `n` bytes and returns the difference of the first pair that differs (0 if equal). |
 | `ft_calloc` | `void *ft_calloc(size_t nmemb, size_t size)` | Allocates `nmemb * size` bytes set to zero. Returns `NULL` if the multiplication would overflow or if `malloc` fails. |
 
@@ -74,7 +74,7 @@ These work on raw bytes, so they take `void *` and treat the data as `unsigned c
 
 The usual values for `fd` are `1` (standard output) and `2` (standard error), but any open file descriptor works.
 
-### Part 3: Linked lists
+### Part 3: linked lists
 
 ```c
 typedef struct s_list
@@ -121,8 +121,7 @@ A few decisions worth knowing about:
 From the project folder:
 
 ```bash
-make          # builds libft.a (mandatory part)
-make bonus    # also adds the linked list functions
+make          # builds libft.a
 make clean    # removes the object files
 make fclean   # removes object files and libft.a
 make re       # fclean followed by a full rebuild
@@ -151,7 +150,7 @@ If the header lives in another directory, add `-I<path to libft.h>`.
 
 ### Testing
 
-Each function was checked against the real libc version (or against the expected output when no libc version exists) and run with AddressSanitizer (`-fsanitize=address`) to catch out-of-bounds accesses and memory leaks. Edge cases include empty strings, `n = 0`, `NULL` arguments where the original tolerates them, and simulated allocation failures.
+The Makefile builds all listed functions with `-Wall -Wextra -Werror`. Use a test harness to compare the reimplemented libc functions with their standard-library counterparts and to check edge cases such as empty strings, `n = 0`, and allocation failures.
 
 ## Resources
 

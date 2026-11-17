@@ -23,7 +23,7 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	$(AR) $(NAME) $(OBJS)
 
-%.o: %.c libft.h
+%.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
