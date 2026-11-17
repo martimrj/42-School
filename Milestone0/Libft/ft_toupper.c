@@ -6,13 +6,12 @@
 /*   By: majesus <majesus@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/29 20:02:54 by majesus           #+#    #+#             */
-/*   Updated: 2026/11/17 16:53:10 by majesus          ###   ########.fr       */
+/*   Updated: 2026/11/17 18:12:34 by majesus          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/* Converte uma letra minúscula ASCII para maiúscula. */
 int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')

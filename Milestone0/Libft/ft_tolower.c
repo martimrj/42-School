@@ -6,13 +6,12 @@
 /*   By: majesus <majesus@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/29 20:04:10 by majesus           #+#    #+#             */
-/*   Updated: 2026/11/17 16:52:47 by majesus          ###   ########.fr       */
+/*   Updated: 2026/11/17 18:12:41 by majesus          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/* Converte uma letra maiúscula ASCII para minúscula. */
 int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
