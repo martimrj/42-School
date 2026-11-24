@@ -1,25 +1,36 @@
-NAME	= libftprintf.a
-CC 		= cc
-FLAGS	= -Wextra -Wall -Werror
-AR		= ar rcs
-RM		= rm -f
+NAME		= 	libftprintf.a
+CC 			= 	cc
+FLAGS		= 	-Wextra -Wall -Werror -I $(LIBFT_DIR)
+AR			= 	ar rcs
+RM			= 	rm -f
+LIBFT_DIR 	=	libft/
+LIBFT 		=	$(LIBFT_DIR)libft.a
 
-SRCS	=
+SRCS		= 	ft_printf.c ft_printf_c.c ft_printf_str.c ft_print_hex.c \
+				ft_printf_dec_int.c ft_print_u.c
 
-OBJS	=
+OBJS		=	$(SRCS:.c=.o)
 
-all : $(NAME)
+all : $(NAME) $(LIBFT)
 
-$(NAME): $(OBJS)
+$(LIBFT):
+	$(MAKE) -c $(LIBFT_DIR)
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
+$(NAME): $(OBJS) $(LIBFT)
+	cp	$(LIBFT) $(NAME)
 	$(AR) $(NAME) $(OBJS)
-
 
 clean:
 	$(RM) $(OBJS)
+	$(MAKE) -c $(LIBFT_DIR) clean
 
 fclean:
 	$(RM) $(NAME)
+	$(MAKE) -C $(LIBFT_DIR) fclean
 
-re: fclean clean
+re: fclean clean all
 
 .PHONY: all clean fclean re
