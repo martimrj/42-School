@@ -1,30 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf_str.c                                    :+:      :+:    :+:   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: majesus <majesus@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/11/26 16:25:29 by majesus           #+#    #+#             */
-/*   Updated: 2026/11/26 16:29:23 by majesus          ###   ########.fr       */
+/*   Created: 2026/11/25 15:31:48 by majesus           #+#    #+#             */
+/*   Updated: 2026/11/27 21:41:55 by majesus          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
 
-int	ft_print_str(char *s)
-{
-	int written;
+# include <stdarg.h>
+# include <stddef.h>
+# include <unistd.h>
+# include "Libft/libft.h"
 
-	if(!s)
-	{
-		written = write(1, "(null)", 6);
-		if (written < 0)
-			return (-1);
-		return (write);
-	}
-	writen = write( 1, s, ft_strlen(s));
-	if (written < 0)
-		return (-1);
-	return (written)
-}
+int	ft_printf(const char *fmt, ...);
+int	ft_printf_char(char c);
+int	ft_printf_str(char *str);
+int	ft_printf_base(unsigned long nb, const char *digits);
+int	ft_printf_ptr(void *ptr);
+int	ft_printf_nbr(int nbr);
+int	ft_printf_unsigned(unsigned int nbr);
+
+#endif

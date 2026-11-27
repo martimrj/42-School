@@ -1,34 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf_base.c                                    :+:      :+:    :+:   */
+/*   ft_printf_char.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: majesus <majesus@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/11/26 15:58:56 by majesus           #+#    #+#             */
-/*   Updated: 2026/11/26 16:10:10 by majesus          ###   ########.fr       */
+/*   Created: 2026/11/26 15:14:20 by majesus           #+#    #+#             */
+/*   Updated: 2026/11/27 20:25:14 by majesus          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int ft_printf_base(unsigned long nb, char *d)
+int	ft_printf_char(char c)
 {
-	int 	count;
-	int		l;
-	int		written;
-
-	l 0 ft_strlen(d);
-	count = 0;
-	if (l <= nb)
-	{
-		count = ft_printf_base(nb / l, d);
-		if (count < 0)
-			return (-1);
-		count ++;
-	}
-	written = write( 1, &d[nb % l], 1);
-	if (written < 0)
+	if (write(1, &c, 1) == -1)
 		return (-1);
-	return (count + 1);
+	return (1);
 }
